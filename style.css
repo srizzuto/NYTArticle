@@ -1,0 +1,71 @@
+body {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1%;
+}
+
+h1 {
+    margin-top: 8%;
+    text-align: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#right-footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20%;
+}
+
+#middle-footer-container {
+  font: 20px 'ChomskyRegular';
+}
+
+#left-footer-container {
+  display: flex;
+  width: 26%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#hamburguer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hamburger {
+  margin-top: 50%;
+  height: 20px;
+  width: 20px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.stick {
+  background-color: black;
+  height: 2px;
+  width: 15px;
+  margin: 2px 1px 2px 1px;
+}
+
+.blue-button {
+  border: 1px solid rgb(49, 74, 105);
+  border-radius: 2px;
+  display: inline-block;
+  padding: 4% 5%;
+  background-color: rgb(88, 122, 167);
+  color: antiquewhite;
+  font: 11px Verdana, Geneva, Tahoma, sans-serif;
+}
