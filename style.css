@@ -12,8 +12,18 @@ header {
 }
 
 h1 {
-    margin-top: 8%;
-    text-align: center;
+  padding-top: 22%;
+  text-align: left;
+  font-family: cursive;
+  font: 40px bold italic;
+}
+
+hr {
+  border-top: 1px solid darkgray;
+}
+
+img {
+  margin: auto;
 }
 
 .pointer {
@@ -53,6 +63,11 @@ h1 {
   align-items: center;
 }
 
+img-container {
+  position: relative;
+  max-width: 100%;
+}
+
 .stick {
   background-color: black;
   height: 2px;
@@ -68,4 +83,19 @@ h1 {
   background-color: rgb(88, 122, 167);
   color: antiquewhite;
   font: 11px Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.centered {
+    margin: auto;
+    justify-content: left;
+    width: 50%;
+}
+
+.icons {
+    font-size: 24px;
+    display: flex;
+}
+
+.icons > i {
+    margin: 10px;
 }
