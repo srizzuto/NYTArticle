@@ -1,51 +1,86 @@
 body {
+  margin: 0;
+  background-color:whitesmoke;
   display: block;
-  width: 90%;
-  margin: auto;
+  min-width: 100%;
 }
 
-header {
+nav {
+  background-color: whitesmoke;
+  position: fixed;
   display: flex;
-  justify-content: space-between;
+  margin: auto;
   align-items: center;
-  margin-top: 1%;
+  width: 100%;
+  border-bottom: 1px solid rgb(233, 233, 233);
+  padding: 5px;
 }
 
 h1 {
-  padding-top: 22%;
+  width: 70%;
+  left: auto;
   text-align: left;
   font-family: cursive;
-  font: 40px bold italic;
+  font: 40px italic bold;
 }
 
 hr {
   border-top: 1px solid darkgray;
+  opacity: 0.3;
+}
+
+section {
+  margin: auto;
+  text-align: center;
 }
 
 img {
   margin: auto;
+  max-width: 100%;
 }
 
-.pointer {
-  cursor: pointer;
+figure {
+  margin: 15px auto;
+  width: 72%;
+}
+
+figcaption {
+  margin: left;
+  text-align: left;
+  width: 70%;
+}
+
+article {
+  width: 40%;
+  margin: auto;
+  text-align: left;
 }
 
 #right-footer-container {
   display: flex;
+  position: relative;
+  float: right;
   justify-content: space-evenly;
   align-items: center;
-  width: 20%;
+  width: 10%;
+  padding-right: 5%;
 }
 
 #middle-footer-container {
-  font: 20px 'ChomskyRegular';
+  font: 24px 'ChomskyRegular';
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
 }
 
 #left-footer-container {
   display: flex;
-  width: 26%;
+  position: relative;
+  float: left;
+  width: 14%;
   justify-content: space-evenly;
   align-items: center;
+  padding-left: 5%;
 }
 
 #hamburguer-container {
@@ -63,9 +98,23 @@ img {
   align-items: center;
 }
 
-img-container {
-  position: relative;
-  max-width: 100%;
+.main {
+  padding-top: 50px;
+}
+
+.spacecosmos {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.title-icons {
+  width: 39%;
+  margin: auto;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .stick {
@@ -85,17 +134,73 @@ img-container {
   font: 11px Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.centered {
-    margin: auto;
-    justify-content: left;
-    width: 50%;
-}
-
 .icons {
-    font-size: 24px;
-    display: flex;
+  font-size: 14px;
+  display: flex;
+  justify-content: left;
 }
 
 .icons > i {
-    margin: 10px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 50%;
+  margin: 10px;
+  width: 20px;
+  height: 18px;
+  background-color: rgb(231, 230, 230);
+  padding: 5px 2px 2px 2px;
+}
+
+.caption {
+  font: 14px Arial;
+  color: grey;
+}
+
+.rick {
+  font: 12px Arial;
+  color: rgb(150, 150, 150);
+}
+
+.author {
+  text-align: left;
+  line-height: 200%;
+  margin-bottom: 40px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.date {
+  font: 14px Verdana;
+}
+
+.science {
+  font: 12px 'Libre Franklin', sans-serif;
+  font-weight: bold;
+}
+
+.stories {
+  font: 14px 'Libre Franklin', sans-serif;
+  font-style: italic;
+  color: rgb(75, 75, 75)
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.signupbtn {
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 105px;
+  height: 20px;
+  text-align: center;
+  vertical-align: text-top;
+  padding: 4px;
+  font: 15px 'Libre Franklin', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
 }
