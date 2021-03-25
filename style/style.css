@@ -1,18 +1,7 @@
+/* General Setup */
 body {
   background-color: #fff;
   min-width: 100%;
-}
-
-nav {
-  background-color: #fff;
-  position: fixed;
-  display: flex;
-  margin: auto;
-  align-items: center;
-  width: 100%;
-  max-width: 100%;
-  border-bottom: 1px solid rgb(233, 233, 233);
-  padding: 5px;
 }
 
 h1 {
@@ -28,52 +17,73 @@ hr {
   opacity: 0.3;
 }
 
-figcaption {
-  text-align: left;
-}
-
-article {
-  display: block;
-  margin: auto;
-}
-
-article > p {
-  width: 600px;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: left;
-}
-
-header {
-  margin: auto;
-}
-
 a {
   text-decoration: none;
   color: black;
 }
 
-iframe {
+.p-format{
+  width: 600px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
   margin: auto;
-  width: 560px;
-  height: 315px;
 }
 
-ul {
-  list-style: none;
+.flexer {
+  position: flex;
+  width: 100%;
 }
 
-aside {
-  background-color: red;
-  display: block;
-  float: right;
-  margin:130% 1% 0px 20px;
-  width: 20%;
+.caption {
+  font: 14px Arial, Helvetica, sans-serif;
+  color: grey;
 }
 
-aside > hr {
-  opacity: 0.8;
-  border-style: dotted;
+.caption-author {
+  font: 12px Arial, Helvetica, sans-serif;
+  color: rgb(150, 150, 150);
+}
+
+/* General Wrappers */
+.wrapper {
+  width: 100%;
+  margin: auto;
+} 
+
+.wrapper > p {
+  width: 600px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  margin: auto;
+}
+
+.wrapper-flex {
+  width: 100%;
+  margin: auto; 
+  display: flex; 
+}
+
+.wrapper-flex > p {
+  width: 600px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  margin: auto;
+}
+
+/* Nav Bar */
+nav {
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  border-bottom: 1px solid rgb(233, 233, 233);
+  padding: 5px;
 }
 
 #right-nav-container {
@@ -121,6 +131,13 @@ aside > hr {
   align-items: center;
 }
 
+.stick {
+  background-color: black;
+  height: 2px;
+  width: 15px;
+  margin: 2px 1px 2px 1px;
+}
+
 .blue-button {
   border: 1px solid rgb(49, 74, 105);
   border-radius: 2px;
@@ -133,6 +150,7 @@ aside > hr {
   cursor: pointer;
 }
 
+/* Main Containers */
 .main {
   padding-top: 50px;
   margin: auto;
@@ -140,6 +158,66 @@ aside > hr {
 
 .main-content {
   display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+/* Bottom Article */
+.bottom-article {
+  font: 11px 'Libre Franklin', sans-serif;
+  color:rgb(150, 150, 150);
+  margin: 20px 0px 50px 0px;
+}
+
+.bottom-article > div {
+  width: 600px;
+  margin: 20px auto 20px auto;
+}
+
+.bottom-article > div > a {
+  text-decoration: underline;
+  color:rgb(150, 150, 150);
+}
+
+.bottom-article > div > a:hover {
+  text-decoration: none;
+}
+
+.button-social {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  height: 36px;
+  margin: 20px 0px 20px 0;
+  vertical-align: middle;
+}
+
+.button-social > .icons {
+  color: #333;
+  vertical-align: middle;
+}
+
+.comment-button {
+  text-align: center;
+  width: 330px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #333;
+  border-radius: 2px;
+  background-color: rgb(88, 122, 167);
+  color: antiquewhite;
+  font: 12px Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+/* Header setup */
+figcaption {
+  text-align: left;
+  width: 900px;
+}
+
+header {
   margin: auto;
 }
 
@@ -148,31 +226,27 @@ aside > hr {
   width: 1200px;
 }
 
-.spacecosmos {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 14px;
-  font-weight: bold;
+.img-wrapper {
+  margin: auto;
+  width: 1200px;
 }
 
-.spacecosmos:hover {
-  text-decoration: underline;
-  cursor: pointer;
+article {
+  width: 100%;
+  margin: auto;
+}
+
+article > p {
+  width: 600px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  margin-left: auto;
 }
 
 .title-icons {
   width: 39%;
   margin: auto;
-}
-
-.pointer {
-  cursor: pointer;
-}
-
-.stick {
-  background-color: black;
-  height: 2px;
-  width: 15px;
-  margin: 2px 1px 2px 1px;
 }
 
 .icons {
@@ -192,19 +266,10 @@ aside > hr {
   padding: 5px 2px 2px 2px;
 }
 
-.caption {
-  font: 14px Arial, Helvetica, sans-serif;
-  color: grey;
-}
-
-.caption-author {
-  font: 12px Arial, Helvetica, sans-serif;
-  color: rgb(150, 150, 150);
-}
-
 .author {
   margin: auto;
   text-align: left;
+  width: 600px;
   line-height: 35px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -224,6 +289,8 @@ aside > hr {
   font: 13px Verdana, sans-serif;
 }
 
+/* 'Sign up for Science Times' Setup */
+
 .science {
   font: 12px 'Libre Franklin', sans-serif;
   font-weight: bold;
@@ -236,6 +303,8 @@ aside > hr {
 }
 
 .signup {
+  width: 600px;
+  margin: auto;
   display: flex;
   align-items: center;
   font-family: 'Libre Franklin', sans-serif;
@@ -255,6 +324,7 @@ aside > hr {
   cursor: pointer;
 }
 
+/* 'Thanks for Reading' Setup */
 .thanks {
   font: 14px 'Libre Franklin', sans-serif;
   font-weight: bold;
@@ -268,20 +338,78 @@ aside > hr {
 
 .thanks > hr {
   margin: 15px auto;
-  width: 15%;
+  width: 70px;
+}
+
+/*Aside Setup */
+.empty-container {
+  width: 210px;
+  margin-right: auto;
+}
+
+.article-container {
+  width: 600px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+aside {
+  display: block;
+  width: 210px;
+  margin: 30px auto auto 0px;
+}
+
+aside > hr {
+  opacity: 0.8;
+  border-style: dotted;
+}
+
+.aside-wrapper {
+  width: 210px;
+  margin-right: auto;
+  margin-left: 70px;
+  align-items: center;
+}
+
+.pick {
+  display: flex;
+}
+
+.pick > a {
+  text-decoration: none;
+  font-size: 14px;
+  margin: 8px 8px 8px 0px;
+}
+
+.pick > a:hover {
+  text-decoration: underline;
+}
+
+.pick-link {
+  cursor: pointer;
+  width: auto;
+}
+
+.pick-link > img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+
+/* Inflation Setup */
+
+.inflation {
+  display: block;
+  width: 945px;
+  height: auto;
+  position: relative;
+  margin: auto;
+  padding: 10px;
 }
 
 .inflation-img {
   width: 945px;
   height: 576px;
-}
-
-.inflation {
-  display: block;
-  width: 70%;
-  position: relative;
-  margin: auto;
-  padding: 10px;
 }
 
 .inflation-header {
@@ -292,9 +420,9 @@ aside > hr {
   text-align: left;
   font: 18px 'Libre Franklin', sans-serif;
   font-weight: bold;
-  margin: auto;
+  margin-right: auto;
   margin-bottom: 4px;
-  width: 72%;
+  width: 945px;
 }
 
 .inflation-header > p {
@@ -302,7 +430,7 @@ aside > hr {
   font-size: 14px;
   color: rgb(122, 122, 122);
   margin: auto;
-  width: 72%;
+  width: 945px;
 }
 
 .inflation-text {
@@ -310,12 +438,10 @@ aside > hr {
   display: grid;
   grid-template-columns: auto auto auto auto;
   row-gap: 150px;
-  column-gap: 0px;
-  padding: 5px;
+  column-gap: 50px;
   position: absolute;
   width: 985px;
-  left: 210px;
-  bottom: 50px;
+  bottom: 30px;
 }
 
 .info {
@@ -335,7 +461,7 @@ aside > hr {
   margin-bottom: 50px;
   font-size: 14px;
   text-align: left;
-  width: 50%;
+  width: 985px;
 }
 
 .inflation-foot > hr {
@@ -347,11 +473,28 @@ aside > hr {
   margin-right: auto;
 }
 
-.paragraph-link {
-  text-decoration: underline;
-  color: #32689b;
-  font-size: 18px;
+/* Youtube Video, Cosmos Image &links Setup */
+iframe {
+  margin: auto;
+  width: 600px;
+  height: 315px;
+}
+
+.video-wrapper {
+  width: 600px;
+  margin: 43px auto;
+}
+
+/* Cosmos Image */
+.spacecosmos {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
   font-weight: bold;
+}
+
+.spacecosmos:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .cosmos-img {
@@ -360,34 +503,95 @@ aside > hr {
   margin: auto;
 }
 
-.aside-wrapper {
-  float: left;
-  margin-right: 50px;
+.cosmos > div {
+  width: 600px;
+  margin: auto;
 }
 
-.pick {
+/* Recirculation Setup */
+
+.recirculation {
   display: flex;
+  width: 100%;
+  padding: 20px 3% 0px 3%;
 }
 
-.pick > a {
-  text-decoration: none;
-  font-size: 14px;
-  margin: 8px 8px 8px 8px;
+.more-space-astronomy {
+  display: block;
+  width: 852px;
+  padding-top: 17px;
+  border-top: 1px solid #333;
 }
 
-.pick > a:hover {
-  text-decoration: underline;
+.flex-div {
+  display: flex;
+  padding-top: 17px;
 }
 
-.pick-link {
+.flex-div > div {
+  height: 288.75px;
+  width: 272.63px;
+}
+
+.rec-container {
+  height: 203.75px;
+  width: 272.63px;
+}
+
+.caption-wrapper {
+  width: 272.63px;
+  height: 16px;
+}
+
+.rec-image {
+  height: 181.75px;
+}
+
+.rec-image > img {
+  width: 272.63px;
+  height: 181.75px; 
+}
+
+.rec-caption {
+  font-size: 12px;
+  color: grey;
+  text-align: right;
+}
+
+.image-title {
+  width: 272.63px;
+  height: 65px;
+  padding: 0px 10px 0px 0px;
+  font-weight: bold;
+}
+
+.more-head {
+  width: 100%;
+}
+
+.more-head {
+  font: 16px 'Libre Franklin', sans-serif;
+  font-weight: bold;
+}
+
+.popular {
+  background-color: grey;
+  width: 315px;
+}
+/*------------------*/
+
+ul {
+  list-style: none;
+}
+.pointer {
   cursor: pointer;
-  width: auto;
 }
 
-.pick-link > img {
-  width: 75px;
-  height: 75px;
-  object-fit: cover;
+.paragraph-link {
+  text-decoration: underline;
+  color: #32689b;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .index {
