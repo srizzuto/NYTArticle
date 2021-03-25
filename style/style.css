@@ -1,7 +1,7 @@
 /* General Setup */
 body {
   background-color: #fff;
-  min-width: 100%;
+  max-width: 100%;
 }
 
 h1 {
