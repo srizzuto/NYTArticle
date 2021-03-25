@@ -38,6 +38,8 @@ a {
 .caption {
   font: 14px Arial, Helvetica, sans-serif;
   color: grey;
+  width: 1200px;
+  margin: auto;
 }
 
 .caption-author {
@@ -92,6 +94,11 @@ article > p {
   margin: auto;
 }
 
+.img-container {
+  margin: auto;
+  width: 1200px;
+}
+
 /* Nav Bar */
 .nav-top {
   top: 0;
@@ -118,7 +125,7 @@ article > p {
 }
 
 #middle-nav-container {
-  font: 24px 'ChomskyRegular';
+  font: 24px 'ChomskyRegular', cursive;
   margin: auto;
   text-align: center;
   vertical-align: middle;
@@ -183,9 +190,13 @@ article > p {
 }
 
 /* Header setup */
+figure {
+  display: block;
+  text-align: center;
+}
+
 figcaption {
   text-align: left;
-  margin-right: 25%;
 }
 
 header {
@@ -295,7 +306,10 @@ aside {
 }
 
 .pick {
-  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: rgb(83, 83, 83);
 }
 
 .pick > a {
@@ -314,14 +328,15 @@ aside {
 }
 
 .pick-link {
+  display: flex;
   cursor: pointer;
   width: auto;
 }
 
 .pick-link > img {
+  margin: 10px;
   width: 75px;
   height: 75px;
-  object-fit: cover;
 }
 
 /* 'Sign up for Science Times' Setup */
@@ -487,9 +502,12 @@ iframe {
   height: 315px;
 }
 
-.video-wrapper {
-  width: 600px;
-  margin: 43px auto;
+.video-caption {
+  font: 14px Arial, Helvetica, sans-serif;
+  color: grey;
+  margin: auto auto 25px auto;
+  padding-right: 107px;
+  width: 500px;
 }
 
 /* Cosmos Image */
@@ -510,13 +528,14 @@ iframe {
   margin: auto;
 }
 
-.cosmos > div {
+.cosmos {
   width: 728px;
   margin: auto;
 }
 
-.cosmos > div > figcaption {
+.cosmos > figcaption {
   width: 728px;
+  margin-bottom: 25px;
 }
 
 /* Recirculation Setup */
