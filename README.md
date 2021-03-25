@@ -2,11 +2,9 @@
 
 # New York Times Article Project
 
-> One paragraph statement about the project.
+> This is my first Microverse project. An emulation of an article of The New York Times.
 
 ![screenshot](/img/nyta-screenshot.png)
-
-This is my first Microverse project. An emulation of an article of The New York Times.
 
 ## Built With
 
@@ -37,11 +35,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
 
-
-
 ## Authors
 
-👤 **Tanzila**
+👤 **Sebastian Rizzuto**
 
 - GitHub: [@githubhandle](https://github.com/srizzuto)
 - Twitter: [@twitterhandle](https://twitter.com/sbstnrzzt)
