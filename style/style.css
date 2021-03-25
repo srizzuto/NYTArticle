@@ -22,7 +22,7 @@ a {
   color: black;
 }
 
-.p-format{
+.p-format {
   width: 600px;
   font-size: 20px;
   line-height: 30px;
@@ -31,7 +31,7 @@ a {
 }
 
 .flexer {
-  position: flex;
+  display: flex;
   width: 100%;
 }
 
@@ -46,23 +46,36 @@ a {
 }
 
 /* General Wrappers */
+article {
+  width: 100%;
+  margin: auto;
+}
+
+article > p {
+  width: 600px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  margin-left: auto;
+}
+
 .wrapper {
   width: 100%;
   margin: auto;
-} 
+}
 
 .wrapper > p {
   width: 600px;
   font-size: 20px;
   line-height: 30px;
   text-align: left;
-  margin: auto;
+  margin: 0 auto 1em auto;
 }
 
 .wrapper-flex {
   width: 100%;
-  margin: auto; 
-  display: flex; 
+  margin: auto;
+  display: flex;
 }
 
 .wrapper-flex > p {
@@ -162,59 +175,10 @@ nav {
   margin: auto;
 }
 
-/* Bottom Article */
-.bottom-article {
-  font: 11px 'Libre Franklin', sans-serif;
-  color:rgb(150, 150, 150);
-  margin: 20px 0px 50px 0px;
-}
-
-.bottom-article > div {
-  width: 600px;
-  margin: 20px auto 20px auto;
-}
-
-.bottom-article > div > a {
-  text-decoration: underline;
-  color:rgb(150, 150, 150);
-}
-
-.bottom-article > div > a:hover {
-  text-decoration: none;
-}
-
-.button-social {
-  display: flex;
-  width: 600px;
-  justify-content: space-between;
-  height: 36px;
-  margin: 20px 0px 20px 0;
-  vertical-align: middle;
-}
-
-.button-social > .icons {
-  color: #333;
-  vertical-align: middle;
-}
-
-.comment-button {
-  text-align: center;
-  width: 330px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: 1px solid #333;
-  border-radius: 2px;
-  background-color: rgb(88, 122, 167);
-  color: antiquewhite;
-  font: 12px Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  line-height: 25px;
-}
-
 /* Header setup */
 figcaption {
   text-align: left;
-  width: 900px;
+  margin-right: 25%;
 }
 
 header {
@@ -229,19 +193,6 @@ header {
 .img-wrapper {
   margin: auto;
   width: 1200px;
-}
-
-article {
-  width: 100%;
-  margin: auto;
-}
-
-article > p {
-  width: 600px;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: left;
-  margin-left: auto;
 }
 
 .title-icons {
@@ -289,6 +240,83 @@ article > p {
   font: 13px Verdana, sans-serif;
 }
 
+/* 'Thanks for Reading' Setup */
+.thanks {
+  font: 14px 'Libre Franklin', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+}
+
+.thanks > a {
+  color: #32689b;
+}
+
+aside > hr {
+  opacity: 0.8;
+  border-style: dotted;
+}
+
+.thanks > hr {
+  margin: 15px auto;
+  width: 70px;
+}
+
+/* Aside Setup */
+.empty-container {
+  width: 210px;
+  margin-right: auto;
+}
+
+.article-container {
+  width: 600px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+aside {
+  display: block;
+  width: 210px;
+  margin: 30px auto auto 0;
+}
+
+.aside-wrapper {
+  width: 210px;
+  margin-right: auto;
+  margin-left: 70px;
+  align-items: center;
+}
+
+.pick {
+  display: flex;
+}
+
+.pick > a {
+  text-decoration: none;
+  font-size: 14px;
+  margin: 8px 8px 8px 0;
+}
+
+.bottom-article > div > a {
+  text-decoration: underline;
+  color: rgb(150, 150, 150);
+}
+
+.pick > a:hover {
+  text-decoration: underline;
+}
+
+.pick-link {
+  cursor: pointer;
+  width: auto;
+}
+
+.pick-link > img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+
 /* 'Sign up for Science Times' Setup */
 
 .science {
@@ -324,76 +352,48 @@ article > p {
   cursor: pointer;
 }
 
-/* 'Thanks for Reading' Setup */
-.thanks {
-  font: 14px 'Libre Franklin', sans-serif;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px;
+/* Bottom Article */
+.bottom-article {
+  font: 11px 'Libre Franklin', sans-serif;
+  color: rgb(150, 150, 150);
+  margin: 20px 0% 50px 0%;
 }
 
-.thanks > a {
-  color: #32689b;
-}
-
-.thanks > hr {
-  margin: 15px auto;
-  width: 70px;
-}
-
-/*Aside Setup */
-.empty-container {
-  width: 210px;
-  margin-right: auto;
-}
-
-.article-container {
+.bottom-article > div {
   width: 600px;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 20px auto 20px auto;
 }
 
-aside {
-  display: block;
-  width: 210px;
-  margin: 30px auto auto 0px;
-}
-
-aside > hr {
-  opacity: 0.8;
-  border-style: dotted;
-}
-
-.aside-wrapper {
-  width: 210px;
-  margin-right: auto;
-  margin-left: 70px;
-  align-items: center;
-}
-
-.pick {
-  display: flex;
-}
-
-.pick > a {
+.bottom-article > div > a:hover {
   text-decoration: none;
-  font-size: 14px;
-  margin: 8px 8px 8px 0px;
 }
 
-.pick > a:hover {
-  text-decoration: underline;
+.button-social {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  height: 36px;
+  margin: 20px 0 20px 0;
+  vertical-align: middle;
 }
 
-.pick-link {
-  cursor: pointer;
-  width: auto;
+.button-social > .icons {
+  color: #333;
+  vertical-align: middle;
 }
 
-.pick-link > img {
-  width: 75px;
-  height: 75px;
-  object-fit: cover;
+.comment-button {
+  text-align: center;
+  width: 330px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #333;
+  border-radius: 2px;
+  background-color: rgb(88, 122, 167);
+  color: antiquewhite;
+  font: 12px Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  line-height: 25px;
 }
 
 /* Inflation Setup */
@@ -498,22 +498,26 @@ iframe {
 }
 
 .cosmos-img {
-  width: 600px;
-  height: 401px;
+  width: 720px;
+  height: 481px;
   margin: auto;
 }
 
 .cosmos > div {
-  width: 600px;
+  width: 728px;
   margin: auto;
+}
+
+.cosmos > div > figcaption {
+  width: 728px;
 }
 
 /* Recirculation Setup */
 
 .recirculation {
   display: flex;
-  width: 100%;
-  padding: 20px 3% 0px 3%;
+  width: 1310px;
+  margin: auto;
 }
 
 .more-space-astronomy {
@@ -525,12 +529,16 @@ iframe {
 
 .flex-div {
   display: flex;
-  padding-top: 17px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 15px;
 }
 
 .flex-div > div {
+  display: block;
   height: 288.75px;
   width: 272.63px;
+  padding-bottom: 20px;
 }
 
 .rec-container {
@@ -549,40 +557,62 @@ iframe {
 
 .rec-image > img {
   width: 272.63px;
-  height: 181.75px; 
+  height: 181.75px;
 }
 
 .rec-caption {
-  font-size: 12px;
+  font-size: 10px;
   color: grey;
   text-align: right;
+  margin-top: 3px;
+  padding-bottom: 4px;
 }
 
 .image-title {
+  display: block;
   width: 272.63px;
   height: 65px;
-  padding: 0px 10px 0px 0px;
+  padding: 0 10px 0 0;
+  font-size: 18px;
   font-weight: bold;
+}
+
+.image-title > div {
+  margin-top: 5px;
+  font: 11px 'Libre Franklin', sans-serif;
+  letter-spacing: 0.5px;
+  color: rgb(167, 166, 166);
 }
 
 .more-head {
   width: 100%;
-}
-
-.more-head {
   font: 16px 'Libre Franklin', sans-serif;
   font-weight: bold;
+  padding-bottom: 15px;
 }
 
 .popular {
-  background-color: grey;
+  display: block;
   width: 315px;
+  padding: 20px 3% 0 3%;
+  margin-left: 30px;
+  padding-left: 15px;
+  border-top: 1px solid #333;
 }
-/*------------------*/
+
+.popular-section {
+  font-size: 19px;
+  line-height: 25px;
+  border-top: 1px solid rgb(212, 212, 212);
+  padding: 15px 0 15px 0;
+}
+
+/* ------------------ */
 
 ul {
   list-style: none;
 }
+
 .pointer {
   cursor: pointer;
 }
@@ -601,9 +631,9 @@ ul {
 }
 
 .index > hr {
-  height:2px;
-  border-top:2px solid black;
-  border-bottom:1px solid black;
+  height: 2px;
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
 .index-head {
@@ -625,7 +655,7 @@ ul {
 
 .index-links {
   text-decoration: none;
-  margin: 1px 0px 2px 1px;
+  margin: 1px 0 2px 1px;
   font: 14px 'Roboto', sans-serif;
   cursor: pointer;
 }
